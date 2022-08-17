@@ -11,9 +11,7 @@ const startButton = document.getElementById('start')
 //         console.log(`${stocks.fruits[fruit_name]} was selected`)
 //         call_production()
 //     }, 2000)
-
 // }
-
 // let production = () => {
 //     setTimeout(() => {
 //         console.log(`Oder received production started`)
@@ -42,12 +40,9 @@ const startButton = document.getElementById('start')
 //             }, 2000)
 //         }, 2000)
 //     }, 2000)
-
 // }
 // Order(3, production)
-
 // promises
-
 
 
 function begin() {
@@ -59,8 +54,6 @@ function begin() {
     function production6() { console.log(`Serving Ice`) }
     function production7() { console.log(`Production Complete`) }
     function production8() { console.log(`Thank you ! Welcome Again`) }
-
-
     function Order() {
         return new Promise((resolve, reject) => {
             setTimeout(() => {
@@ -84,9 +77,7 @@ function begin() {
         setTimeout(production6, 12000)
         setTimeout(production7, 14000)
         setTimeout(production8, 16000)
-
     }
-
     production()
 
         .catch(err => console.log(err))
